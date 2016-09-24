@@ -9,7 +9,7 @@ RSpec.feature "When someone visits /users" do
 
     expect(page).to have_content("Apartment #101")
     expect(page).to have_content("Apartment #102")
-    expect(page).to have_content("Sqft: 1000, $900 per month, $.9 per sqft")
-    expect(page).to have_content("Sqft: 800, $750 per month, $.94 per sqft")
+    expect(page).to have_content("Sqft: 1000, $900 per month, $0.9 per sqft")
+    expect(page).to have_content("Sqft: 800, $750 per month, $0.94 per sqft")
   end
 end

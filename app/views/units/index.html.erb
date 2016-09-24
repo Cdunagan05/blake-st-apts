@@ -2,6 +2,7 @@
 
 <ul>
   <% @units.each do |unit| %>
-    <li><%= unit.name %></li>
+    <li>Apartment #<%= unit.name %></li>
+    <li>Sqft: <%= unit.square_footage %>, $<%= unit.monthly_rent %> per month, $<%= unit.avg_per_sqft %> per sqft</li>
   <% end %>
 </ul>
