@@ -8,7 +8,7 @@ RSpec.feature "When someone visits '/renters'" do
     Unit.create(name: "1b", renter: renter2)
 
     visit renters_path
-
+    
     expect(page).to have_content("Jake Jones: 1a")
     expect(page).to have_content("Adam Arroyo: 1b")
   end
