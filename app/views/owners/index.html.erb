@@ -1,8 +1,8 @@
 <h1>Owners</h1>
 
-<ul id="owners">
+<ul id="owners"
   <% @owners.each do |owner| %>
-    <li><%= owner.first_name %> <%= owner.last_name %>
+    <li><%= link_to "#{owner.first_name} #{owner.last_name}", owner_path(owner) %>
       <ul>
         <% owner.units.each do |unit| %>
           <li><%= unit.name %></li>
