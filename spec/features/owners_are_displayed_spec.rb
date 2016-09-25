@@ -9,7 +9,7 @@ RSpec.feature "When I visit '/owners'" do
     owner2.units.create(name: "2a")
 
     visit owners_path
-
+    
     within("#owners > li:first") do
       expect(page).to have_content("Jessica Jones")
       expect(page).to have_content("1a")

@@ -1,0 +1,9 @@
+<h1><%= @owner.first_name %> <%= @owner.last_name %></h1>
+
+<ul>
+  <% @owner.units.each do |unit| %>
+    <li><%= unit.name %>: $<%= unit.monthly_rent %> per month</li>
+  <% end %>
+</ul>
+
+<h3>Total rent paid to Jessica per month: $<%= @owner.total_rent  %></h3>

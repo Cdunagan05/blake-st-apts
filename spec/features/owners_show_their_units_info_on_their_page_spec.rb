@@ -12,11 +12,11 @@ RSpec.feature "When I visit /owners" do
 
     click_link 'Jessica Jones'
 
-    expect(current_path).to eq('/owners/1')
+    expect(current_path).to eq(owner_path(owner1))
 
     expect(page).to have_content("Jessica Jones")
-    expect(page).to have_content("1a: 900 per month")
-    expect(page).to have_content("1b: 1100 per month")
+    expect(page).to have_content("1a: $900 per month")
+    expect(page).to have_content("1b: $1100 per month")
     expect(page).to have_content("Total rent paid to Jessica per month: $2000")
 
   end
