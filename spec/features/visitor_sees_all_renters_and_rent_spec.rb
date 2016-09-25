@@ -11,7 +11,7 @@ RSpec.feature "When someone visits '/renters/'" do
 
     expect(page).to have_content("Jake Jones: 1a - $1500 per month, $1.25 per sqft")
     expect(page).to have_content("Adam Arroyo: 1b - $1800 per month, $1.38 per sqft")
-    expect(page).to have_content("$1.32 per sqft for all renters"
+    expect(page).to have_content("$1.32 per sqft for all renters")
 
   end
 end

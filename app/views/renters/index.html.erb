@@ -2,6 +2,9 @@
 
 <ul>
   <% @renters.each do |renter| %>
-    <li><%= renter.first_name %> <%= renter.last_name %>: <%= renter.unit.name %></li>
+    <li><%= renter.first_name %> <%= renter.last_name %>: <%= renter.unit.name %> -
+       $<%= renter.unit.monthly_rent %> per month, $<%= renter.unit.avg_per_sqft %> per sqft.</br></li>
   <% end %>
 </ul>
+
+<h3> $<%= @renters.average_cost_per_sqft_for_all %> per sqft for all renters</h3>
